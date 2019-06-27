@@ -8,11 +8,39 @@
     background-size: cover;
   }
 
+  .navbar-toggler .navbar-toggler-icon {
+    color: silver;
+    background-color: black;
+  }
+
   #webLogo {
-      height: 100px;
-      width: 100px;
+      height: 50px;
+      width: 50px;
+  }
+  #logoText {
+    height: 75px;
+    width: 250px;
+  }
+
+  hr {
+    color:#C0C0C0;
+    background-color:#D4AF37;
+    height: 10PX;
+    border: none;
   }
 
   * {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  footer {
+    justify-content: center;
+    background-color: white;
+    margin-top: 10px;
+    position: sticky;
+  }
+
+  #footerText {
+    justify-content: center;
+    align-content: center;
   }
