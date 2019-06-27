@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Contact Us</title>
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg" />
@@ -41,11 +41,37 @@
         </div>
       </div>
     </nav>
-      <hr />  
+      <hr /> 
+      <br /> 
+     <form class="container">
+       <legend>
+        <h3 class="text-center">
+          <br />
+          <div>Contact Our Agency</div>
+        </h3>
+        <fieldset>
+          <div>
+          <label for="clientName">Name:<br /><input class="rounded" type="text" id="clientName" name="clientName" aria-label="Name" required></label>
+          <br />
+          <label for="clientEmail">Email:<br /><input class="rounded" type="text" id="clientEmail" name="clientEmail" aria-label="Email" required></label>
+          <br />
+          <label for="clientPhone">Phone Number: 012-345-6789 <br /><input class="rounded" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="clientPhone" name="clientPhone" aria-label="Phone Number" required></label>
+          <br />
+          <label for="clientPhone">Address:<br /><input class="rounded" type="text" id="clientAddress" name="clientAddress" aria-label="Address" required></label>
+          <br />
+          <label for="clientCity">City:<br /><input class="rounded" type="text" id="clientCity" name="clientCity" aria-label="City" required></label>
+          <br />
+          <label for="clientState">State:<br /><input class="rounded" type="text" id="clientState" maxlength="2" max="2" pattern="[A-Z]{2}" name="clientState" aria-label="State" required></label>
+          <br />
+          <label for="clientZIP">Zip Code:<br /><input class="rounded" type="text" pattern="[0-9]{5}" id="clientZIP" name="clientZIP" aria-label="Zip Code" required></label>
+        </div>
+          <label for="clientNeeds">Specific Requests:<br /><textarea class="rounded" type="email" name="clientNeeds" wrap="hard" aria-label="Client Needs"></textarea></label>
 
-    <fieldset>
-      
-    </fieldset>
+
+
+        </fieldset>
+      </legend>
+      </form>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

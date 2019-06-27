@@ -44,3 +44,16 @@
     justify-content: center;
     align-content: center;
   }
+
+  /* fieldset {
+    background-color: white;
+
+  } */
+
+  form {
+    background-color: white;
+  }
+
+  /* legend {
+    border: 1px solid black;
+  } */
