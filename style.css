@@ -36,8 +36,11 @@
   footer {
     justify-content: center;
     background-color: white;
-    margin-top: 10px;
+    margin-top: 175px;
+
     position: sticky;
+    position: bottom;
+
   }
 
   #footerText {
@@ -51,9 +54,27 @@
   } */
 
   form {
-    background-color: white;
+    background-color: beige;
   }
 
   /* legend {
     border: 1px solid black;
   } */
+
+  #clientName #clientEmail #clientPhone{
+    display: inline-flex
+
+  }
+
+
+
+  #clientState {
+    width: 3rem;
+  }
+  #clientZIP {
+    width: 5rem;
+  }
+
+  button {
+    background-color: #D4AF37
+  }
