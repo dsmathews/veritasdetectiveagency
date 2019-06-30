@@ -72,6 +72,10 @@
     background-color: #D4AF37
   }
 
-  #indexCard {
-    background-color: #D4AF37;
+  #indexCard, #aboutCard {
+    background-color: beige;
+  }
+
+  #aboutImage {
+    max-height: 400px;
   }
