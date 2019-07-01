@@ -53,7 +53,7 @@
 
   } */
 
-  section,form {
+  form, #aboutCard, #serviceChoices {
     background-color: beige;
     background-image: url("images/knotlogo.png");
     
