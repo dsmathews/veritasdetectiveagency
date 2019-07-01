@@ -53,9 +53,12 @@
 
   } */
 
-  form {
+  section,form {
     background-color: beige;
+    background-image: url("images/knotlogo.png");
+    
   }
+
 
   /* legend {
     border: 1px solid black;
@@ -78,4 +81,10 @@
 
   #aboutImage {
     max-height: 400px;
+  }
+
+  .servicesGrid {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-between;
   }
