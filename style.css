@@ -55,8 +55,11 @@
 
   form, #aboutCard, #serviceChoices {
     background-color: beige;
-    /* background-image: url("images/knotlogo.png"); */
     
+  }
+
+  form {
+    background-image: url("images/knotlogo.png");
   }
 
 
