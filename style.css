@@ -55,7 +55,7 @@
 
   form, #aboutCard, #serviceChoices {
     background-color: beige;
-    background-image: url("images/knotlogo.png");
+    /* background-image: url("images/knotlogo.png"); */
     
   }
 
@@ -85,4 +85,13 @@
 
   .servicesGrid {
     justify-content: center;
+  }
+
+  p {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #A1, #A2 {
+    text-decoration: underline;
   }
