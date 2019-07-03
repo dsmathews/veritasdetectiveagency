@@ -49,12 +49,13 @@
   </nav>
   <hr />
   <div class="row ">
-      <div class="col-12 h-75">
-        <img class="w-100 h-75 my-0 p-1" id="aboutImage" src="images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="About Our Agency">
-        <!-- Photo by Helloquence on Unsplash -->
-      </div>
+    <div class="col-12 h-75">
+      <img class="w-100 h-75 my-0 p-1" id="aboutImage" src="images/nasa-Q1p7bh3SHj8-unsplash.jpg"
+        alt="About Our Agency">
+      <!-- Photo by Helloquence on Unsplash -->
     </div>
-    <br />
+  </div>
+  <br />
   <div id="formBox" class="container mb-5">
     <form class="rounded shadow shadow-lg" role="form" method="POST" id="contactForm">
       <h3 class="text-center">
@@ -76,30 +77,38 @@
         </div>
         <div class="col-md-4 col-sm-12 form-group">
           <div class="ml-5 mr-5">
-            <label for="clientPhone">Phone Number:</label> <br /><input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" class="rounded form-control shadow shadow-sm"
-              type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="clientPhone" name="clientPhone"
-              aria-label="Phone Number" required>
+            <label for="clientPhone">Phone Number:</label> <br /><input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              maxlength="10" class="rounded form-control shadow shadow-sm" type="tel"
+              id="clientPhone" name="clientPhone" aria-label="Phone Number"
+              required>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-12-sm form-group">
+        <div class="col-md-3 col-12-sm form-group">
           <div class="ml-5 mr-5">
             <label for="clientAddress">Address:</label><br /><input class="rounded form-control shadow shadow-sm"
               type="text" id="clientAddress" name="clientAddress" aria-label="Address" required>
           </div>
         </div>
-        <div class="col-md-4 col-12-sm form-group">
-          <div class="ml-5">
-            <label for="clientState">State:</label><br /><input class="rounded mr-5 form-control shadow shadow-sm"
-              type="text" id="clientState" maxlength="2" pattern="[A-Z]{2}" name="clientState"
-              aria-label="State" required>
+        <div class="col-md-3 col-12-sm form-group">
+          <div class="ml-5 mr-5">
+            <label for="clientCity">City:</label><br /><input class="rounded form-control shadow shadow-sm"
+              type="text" id="clientCity" name="clientCity" aria-label="City" required>
           </div>
         </div>
-        <div class="col-md-4 col-12-sm form-group">
+        <div class="col-md-3 col-12-sm form-group">
           <div class="ml-5">
-            <label for="clientZIP">Zip Code:</label><br /><input class="rounded form-control shadow shadow-sm"
-              type="tel" pattern="[0-9]*" max="99999" maxlength="5"  id="clientZIP" name="clientZIP" aria-label="Zip Code" required>
+            <label for="clientState">State:</label><br /><input class="rounded mr-5 form-control shadow shadow-sm"
+              type="text" id="clientState" maxlength="2" pattern="[A-Z]{2}" name="clientState" aria-label="State"
+              required>
+          </div>
+        </div>
+        <div class="col-md-3 col-12-sm form-group">
+          <div class="ml-5 mr-5">
+            <label for="clientZip">Zip Code:</label><br /><input class="rounded form-control shadow shadow-sm"
+              type="tel" pattern="[0-9]*" max="99999" maxlength="5" id="clientZip" name="clientZip"
+              aria-label="Zip-Code" required>
           </div>
         </div>
       </div>
@@ -127,8 +136,8 @@
   <footer class="footer py-3">
     <div class="container text-center">Copyright 2019 MME. Veritas Detective Agency. All Rights Reserved.</div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -136,6 +145,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="contactForm.js"></script>
 
 </body>
 
