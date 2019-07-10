@@ -23,7 +23,6 @@
   }
 
   hr {
-    color:#C0C0C0;
     background-color:#D4AF37;
     height: 10PX;
     border: none;
@@ -53,13 +52,9 @@
 
   } */
 
-  form, #aboutCard, #serviceChoices {
-    background-color: beige;
+  form, #aboutCard, #serviceChoices, #indexCard, #aboutCard {
+    background-color: whitesmoke;
     
-  }
-
-  form {
-    background-image: url("images/knotlogo.png");
   }
 
 
@@ -76,10 +71,6 @@
 
   button {
     background-color: #D4AF37
-  }
-
-  #indexCard, #aboutCard {
-    background-color: beige;
   }
 
   #aboutImage {
@@ -101,5 +92,15 @@
 
   #caseStudy1 {
     border: 5px solid #D4AF37;
+
+  }
+
+  body {
+    background-image: linear-gradient(to right, #0B138E, #4287f5 );
+    
+  }
+
+  .navbar {
+    background-image: linear-gradient(to right, white, black );
 
   }
