@@ -34,7 +34,7 @@
 
   footer {
     justify-content: center;
-    background-color: white;
+    background-image: linear-gradient(to right, white, black );
     margin-top: 175px;
 
     position: sticky;
@@ -103,4 +103,25 @@
   .navbar {
     background-image: linear-gradient(to right, white, black );
 
+  }
+
+  #owner {
+    font-style: italic;
+  }
+
+  #footerContact, #footerCertification, #footerAssociations {
+    text-decoration: underline;
+  }
+
+  #footerAssociations {
+    color: white;
+  }
+  #footerCopyright {
+    font-size: 10px;
+  }
+
+  @media (max-width: 740px) {
+    footer, #footerAssociations {
+      color: #0000aa;
+    }
   }
