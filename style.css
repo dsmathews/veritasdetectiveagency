@@ -96,13 +96,17 @@
   }
 
   body {
-    background-image: linear-gradient(to right, #0B138E, #4287f5 );
+    background-image: linear-gradient(to left, #0B138E, #4287f5 );
     
   }
 
   .navbar {
     background-image: linear-gradient(to right, white, black );
 
+  }
+
+  #headingOne, #headingTwo, #headingThree, #headingFour, #headingFive, #headingSix, #headingSeven, #headingEight {
+    background-image: linear-gradient(to right, white, grey)
   }
 
   #owner {
@@ -120,10 +124,10 @@
     font-size: 10px;
   }
 
-  #collapseOne {
+  /* #collapseOne {
     background-color: #D4AF37;
     color: white;
-  }
+  } */
 
   @media (max-width: 740px) {
     footer, #footerAssociations {
