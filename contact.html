@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -17,158 +18,174 @@
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"></image>
-          <image id="logoText" src="images/LogoText.png"></image>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="faq.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <div class="container">
+      <a class="navbar-brand" href="index.html"></image>
+        <image id="logoText" src="images/LogoText.png"></image>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
   <hr />
   <div class="row ">
     <div class="col-12 h-75">
-      <img class="w-100 h-75 my-0 p-1" id="aboutImage" src="images/nasa-Q1p7bh3SHj8-unsplash.jpg"
-        alt="About Our Agency">
+      <img class="w-100 h-75 my-0" id="aboutImage" src="images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="Contact Us">
       <!-- Photo by Helloquence on Unsplash -->
     </div>
   </div>
   <br />
   <div class="row">
-  <div class="col-md-8 col-sm-12">  
-    <div id="formBox" class="container mb-5">
-    <form class=" shadow shadow-lg" role="form" method="POST" id="contactForm">
-      <h3 class="text-center">
-        <br />
-        <div class="display-4">Contact</div>
-      </h3>
-      <div class="row">
-        <div class="col-md-4 col-sm-12 form-group">
-          <div class="ml-5 mr-5">
-            <label for="clientName">Name *</label><br /><input class="rounded form-control shadow shadow-sm" type="text"
-              id="clientName" name="clientName" aria-label="Name" required>
+    <div class="col-md-8 col-sm-12">
+      <div id="formBox" class="container mb-5">
+        <form class=" shadow shadow-lg" role="form" method="POST" id="contactForm">
+          <h3 class="text-center">
+            <br />
+            <div class="display-4">Contact</div>
+          </h3>
+          <div class="row">
+            <div class="col-md-4 col-sm-12 form-group">
+              <div class="ml-5 mr-5">
+                <label for="clientName">Name *</label><br /><input class="rounded form-control shadow shadow-sm"
+                  type="text" id="clientName" name="clientName" aria-label="Name" required>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 form-group">
+              <div class="ml-5 mr-5">
+                <label for="clientEmail">Email *</label><br /><input class="rounded form-control shadow shadow-sm"
+                  type="email" id="clientEmail" name="clientEmail" aria-label="Email" required>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 form-group">
+              <div class="ml-5 mr-5">
+                <label for="clientPhone">Phone Number:</label> <br /><input type="tel"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" class="rounded form-control shadow shadow-sm"
+                  type="tel" id="clientPhone" name="clientPhone" aria-label="Phone Number" required>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-12 form-group">
-          <div class="ml-5 mr-5">
-            <label for="clientEmail">Email *</label><br /><input class="rounded form-control shadow shadow-sm"
-              type="email" id="clientEmail" name="clientEmail" aria-label="Email" required>
+          <div class="row">
+            <div class="col-md-4 col-12-sm form-group">
+              <div class="ml-5 mr-5">
+                <label for="clientAddress">Address:</label><br /><input class="rounded form-control shadow shadow-sm"
+                  type="text" id="clientAddress" name="clientAddress" aria-label="Address" required>
+              </div>
+            </div>
+            <div class="col-md-4 col-12-sm form-group">
+              <div class="ml-5 mr-5">
+                <label for="clientCity">City:</label><br /><input class="rounded form-control shadow shadow-sm"
+                  type="text" id="clientCity" name="clientCity" aria-label="City" required>
+              </div>
+            </div>
+            <div class="col-md-3 col-12-sm form-group">
+              <div class="ml-5">
+                <label for="clientState">State:</label><br /><input class="rounded mr-5 form-control shadow shadow-sm"
+                  type="text" id="clientState" maxlength="2" pattern="[A-Z]{2}" name="clientState" aria-label="State"
+                  required>
+              </div>
+            </div>
+            <div class="col-md-3 col-12-sm form-group">
+              <div class="ml-5 mr-5">
+                <label for="clientZip">Zip Code:</label><br /><input class="rounded form-control shadow shadow-sm"
+                  type="tel" pattern="[0-9]*" max="99999" maxlength="5" id="clientZip" name="clientZip"
+                  aria-label="Zip-Code" required>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-12 form-group">
-          <div class="ml-5 mr-5">
-            <label for="clientPhone">Phone Number:</label> <br /><input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              maxlength="10" class="rounded form-control shadow shadow-sm" type="tel"
-              id="clientPhone" name="clientPhone" aria-label="Phone Number"
-              required>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <div class="ml-5 mr-5">
+                <label for="clientNeeds">Specific Requests:</label><br /><textarea
+                  class="rounded form-control shadow shadow-sm" type="textarea" id="clientNeeds" name="clientNeeds"
+                  wrap="hard" aria-label="Client Needs" rows=5 maxlength=6000></textarea>
+              </div>
+            </div>
           </div>
-        </div>
+          <br />
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="ml-5">
+                <button id="submit" type="button" class="shadow shadow-sm">Submit</button>&nbsp;
+                <button id="reset" type="button" class="shadow shadow-sm">Reset</button>
+              </div>
+            </div>
+          </div>
+          <br />
+        </form>
       </div>
-      <div class="row">
-        <div class="col-md-4 col-12-sm form-group">
-          <div class="ml-5 mr-5">
-            <label for="clientAddress">Address:</label><br /><input class="rounded form-control shadow shadow-sm"
-              type="text" id="clientAddress" name="clientAddress" aria-label="Address" required>
-          </div>
-        </div>
-        <div class="col-md-4 col-12-sm form-group">
-          <div class="ml-5 mr-5">
-            <label for="clientCity">City:</label><br /><input class="rounded form-control shadow shadow-sm"
-              type="text" id="clientCity" name="clientCity" aria-label="City" required>
-          </div>
-        </div>
-        <div class="col-md-3 col-12-sm form-group">
-          <div class="ml-5">
-            <label for="clientState">State:</label><br /><input class="rounded mr-5 form-control shadow shadow-sm"
-              type="text" id="clientState" maxlength="2" pattern="[A-Z]{2}" name="clientState" aria-label="State"
-              required>
-          </div>
-        </div>
-        <div class="col-md-3 col-12-sm form-group">
-          <div class="ml-5 mr-5">
-            <label for="clientZip">Zip Code:</label><br /><input class="rounded form-control shadow shadow-sm"
-              type="tel" pattern="[0-9]*" max="99999" maxlength="5" id="clientZip" name="clientZip"
-              aria-label="Zip-Code" required>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <div class="ml-5 mr-5">
-            <label for="clientNeeds">Specific Requests:</label><br /><textarea
-              class="rounded form-control shadow shadow-sm" type="textarea" id="clientNeeds" name="clientNeeds"
-              wrap="hard" aria-label="Client Needs" rows=5 maxlength=6000></textarea>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="ml-5">
-            <button id="submit" type="button" class="shadow shadow-sm">Submit</button>&nbsp;
-            <button id="reset" type="button" class="shadow shadow-sm">Reset</button>
-          </div>
-        </div>
-      </div>
-      <br />
-    </form>
-  </div>
-</div>
-</div>
-<footer class="footer py-3">
-  <div class="row">
-  <div class=" col-md-4 col-sm-12 mb-2">
-    <div class="text-center">
-      <div class="h5"><span id="footerContact">Contact Information:</span></div>
-      <div>Veritas Detective Agency, LLC</div>
-      <div>Warner Robins, GA 31088</div>
-     <div><i class="fas fa-phone-square-alt fa-sm"></i> Phone:<a href="tel:+19043743093"> 904-374-3093</a></div>
-     <div><i class="fas fa-envelope-square fa-sm"></i> Email:<a href="mailto:info@veritasdetective.com"> info@veritasdetective.com</a></div>
     </div>
-  </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="card">
+        <div id="cardHeader" class="card-header text-center h4">Contact Us</div>
+        <div class="card-body">
+          <p>Veritas Detective Agency is more than happy to discuss the details of your case, answer questions, and
+            review pricing. To begin this process, call us directly or fill out our <a href="contact.html">online
+              form</a>. Consultations are by appointment only.</p>
+          <div><i class="fas fa-phone-square-alt fa-lg"></i> Phone:<a href="tel:+19043743093"> 904-374-3093</a></div>
+          <div> <a href="#"><i class="fab fa-twitter-square fa-lg"></i> Connect on Twitter</a></div>
+          <div><a href="#"><i class="fab fa-facebook-square fa-lg"></i> Connect on Facebook</a></div>
+        </div>
+      </div>
 
-  <div class="col-md-4 col-sm-12 mb-2">
-    <div class="text-center">
-      <div class="h5"><span id="footerCertification">Certification and Licensure</span></div>
-    <div><i class="fas fa-id-badge fa-sm"></i> U.S. Federal Contractor: CAGE# 821H5</div>
-    <div><i class="fas fa-id-card fa-sm"></i> Georgia License #: PDC001036</div>
-    <div><i class="fas fa-id-card fa-sm"></i> Georgia Detective License #: PDE044952</div>
+    </div>
+    <div class="col-md-1 col-sm-12"></div>
   </div>
   </div>
+  <footer class="footer py-3">
+    <div class="row">
+      <div class=" col-md-4 col-sm-12 mb-2">
+        <div class="text-center">
+          <div class="h5"><span id="footerContact">Contact Information:</span></div>
+          <div>Veritas Detective Agency, LLC</div>
+          <div>Warner Robins, GA 31088</div>
+          <div><i class="fas fa-phone-square-alt fa-sm"></i> Phone:<a href="tel:+19043743093"> 904-374-3093</a></div>
+          <div><i class="fas fa-envelope-square fa-sm"></i> Email:<a href="mailto:info@veritasdetective.com">
+              info@veritasdetective.com</a></div>
+        </div>
+      </div>
 
-  <div class="col-md-4 col-sm-12 mb-2">
-    <div class="text-center">
-    <div class="h5"><span id="footerAssociations">Professional Associations</span></div>
-    <div class="mx-auto"><img src="images/wosb3.gif" alt="wosb image"></div>
-  </div>
-  </div>
-  </div>
-  <div class="vw-100 text-center" id="footerCopyright">©2019 MME. Veritas Detective Agency, LLC. All Rights Reserved.</div>
-</footer>
-  
+      <div class="col-md-4 col-sm-12 mb-2">
+        <div class="text-center">
+          <div class="h5"><span id="footerCertification">Certification and Licensure</span></div>
+          <div><i class="fas fa-id-badge fa-sm"></i> U.S. Federal Contractor: CAGE# 821H5</div>
+          <div><i class="fas fa-id-card fa-sm"></i> Georgia License #: PDC001036</div>
+          <div><i class="fas fa-id-card fa-sm"></i> Georgia Detective License #: PDE044952</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 mb-2">
+        <div class="text-center">
+          <div class="h5"><span id="footerAssociations">Professional Associations</span></div>
+          <div class="mx-auto"><img src="images/wosb3.gif" alt="wosb image"></div>
+        </div>
+      </div>
+    </div>
+    <div class="vw-100 text-center" id="footerCopyright">©2019 MME. Veritas Detective Agency, LLC. All Rights Reserved.
+    </div>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -177,7 +194,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="contactForm.js"></script>
+  <script type="text/javascript" src="contactForm.js"></script>
 
 </body>
 
