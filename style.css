@@ -139,3 +139,7 @@
     width: 286px;
     height: 161px;
   }
+
+  #hand, #corp, #infidelity, #background, #children, #yacht {
+    overflow: none;
+  }
