@@ -8,7 +8,7 @@ $('document').ready(function (){
       let contactMethod = $("#contactMethod").val();
       let time = $("#timeToReach").val();
       let situation = $("#situation").val();
-      let description = $("clientNeeds").val();
+      let description = $("#clientNeeds").val();
 
       let  dataCollection = {
          "First Name": firstName,
@@ -23,6 +23,7 @@ $('document').ready(function (){
       }
 
       console.log(dataCollection);
+      console.table(dataCollection);
    }
    $("#submit").on("click", getInfo)
    })
