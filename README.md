@@ -1,2 +1,2 @@
 # veritasdetectiveagency
-Web application for local detective agency.
+Web application for Veritas Detective Agency in Warner Robins, GA.
