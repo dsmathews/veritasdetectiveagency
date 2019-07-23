@@ -143,3 +143,11 @@
   #hand, #corp, #infidelity, #background, #children, #yacht {
     overflow: none;
   }
+
+  .workerPageHeading, .cardLink{
+    text-decoration: underline
+  }
+
+  .workList {
+    list-style: none
+  }
