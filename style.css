@@ -34,7 +34,7 @@
 
   footer {
     justify-content: center;
-    background-image: linear-gradient(to right, white, black );
+    background-image: linear-gradient(to right, lightgrey, black );
     margin-top: 175px;
 
     position: sticky;
@@ -101,7 +101,7 @@
   }
 
   .navbar {
-    background-image: linear-gradient(to right, white, black );
+    background-image: linear-gradient(to right, lightgrey, black );
 
   }
 
