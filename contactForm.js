@@ -24,6 +24,7 @@ $('document').ready(function (){
 
       console.log(dataCollection);
       console.table(dataCollection);
+      $('form').val('');
    }
    $("#submit").on("click", getInfo)
    })
