@@ -151,3 +151,7 @@
   .workList {
     list-style: none
   }
+
+  #ocga{
+    font-style: italic; 
+  }
