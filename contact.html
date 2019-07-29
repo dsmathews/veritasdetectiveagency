@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <title>Contact Us</title>
   <link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -66,7 +67,7 @@
             <div class="display-4">Contact</div>
           </h3>
           <div class="row">
-            <div class="col-md-1 col-sm-0"></div>
+            <div class="col-md-1 col-sm-1"></div>
             <div class="col-md-5 col-sm-12 form-group">
               <div>
                 <label for="clientName">First Name *</label><br /><input class="rounded form-control shadow shadow-sm"
@@ -217,13 +218,16 @@
           </div>
           <br />
           <div class="row">
-              <div class="col-md-1 col-sm-0"></div>
-            <div class="col-md-11 col-sm-12">
+            <div class="col-md-1 col-sm-12"></div>
+            <div class="col-md-10 col-sm-12">
               <div>
+                <div class="g-recaptcha" data-sitekey="6LdJI7AUAAAAAKtKzUQex7NAIF0Xx5Ojzle_LcML" data-callback="rccb"></div>
+                <br />
                 <button id="submit" type="button" class="shadow shadow-sm">Submit</button>&nbsp;
                 <button id="reset" type="button" class="shadow shadow-sm">Reset</button>
               </div>
             </div>
+            <div class="col-md-1 col-sm-12"></div>
           </div>
           <br />
         </form>

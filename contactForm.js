@@ -1,4 +1,7 @@
-$('document').ready(function (){
+$('document').ready(function () {
+
+   
+
    function getInfo() {
       let firstName = $("#clientFirstName").val();
       let lastName = $("#clientLastName").val();
@@ -10,7 +13,7 @@ $('document').ready(function (){
       let situation = $("#situation").val();
       let description = $("#clientNeeds").val();
 
-      let  dataCollection = {
+      let dataCollection = {
          "First Name": firstName,
          "Last Name": lastName,
          "Email": email,
@@ -24,11 +27,22 @@ $('document').ready(function (){
 
       console.log(dataCollection);
       console.table(dataCollection);
-      $('form').val('');
+      $("contactForm").trigger("reset")
+      
    }
-   $("#submit").on("click", getInfo)
-   })
+   function resetButton() {
+      console.log("before")
+      $("contactForm").trigger("reset")
+      console.log("after")
+   }
+   function rccb(response) {
+      $("#submit").prop('disabled', false);
+   }
 
-  
-  
+   $("#submit").on("click", getInfo)
+   $("#reset").on("click", resetButton)
+})
+
+
+
 
