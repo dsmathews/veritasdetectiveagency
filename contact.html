@@ -60,7 +60,7 @@
   <br />
   <div class="row">
     <div class="col-md-8 col-sm-12">
-      <div id="formBox" class="container mb-5">
+      <div id="formBox" class="container mb-5 overflow-auto">
         <form class="shadow shadow-lg" role="form" method="POST" id="contactForm">
           <h3 class="text-center">
             <br />
@@ -206,7 +206,7 @@
           </div>
           <br />
           <div class="row">
-              <div class="col-md-1 col-sm-0"></div>
+            <div class="col-md-1 col-sm-0"></div>
             <div class="col-md-10 col-sm-12 form-group">
               <div>
                 <label for="clientNeeds">Describe how our agency can help you:</label><br /><textarea
@@ -221,9 +221,12 @@
             <div class="col-md-1 col-sm-12"></div>
             <div class="col-md-10 col-sm-12">
               <div>
-                <div class="g-recaptcha" data-sitekey="6LdJI7AUAAAAAKtKzUQex7NAIF0Xx5Ojzle_LcML" data-callback="rccb"></div>
+                <div class="d-flex overflow-auto">
+                  <div class="g-recaptcha" data-sitekey="6LdJI7AUAAAAAKtKzUQex7NAIF0Xx5Ojzle_LcML" d-sm-block
+                    data-callback="rccb"></div>
+                </div>
                 <br />
-                <button id="submit" type="button" class="shadow shadow-sm">Submit</button>&nbsp;
+                <button id="submit" type="button" disabled class="shadow shadow-sm">Submit</button>&nbsp;
                 <button id="reset" type="button" class="shadow shadow-sm">Reset</button>
               </div>
             </div>
@@ -238,7 +241,8 @@
         <div id="cardHeader" class="card-header text-center h4">Contact Us</div>
         <div class="card-body">
           <p>Veritas Detective Agency is more than happy to discuss the details of your case, answer questions, and
-            review pricing. To begin this process, call us directly or fill out our <a href="contact.html#formBox">online
+            review pricing. To begin this process, call us directly or fill out our <a
+              href="contact.html#formBox">online
               form</a>. Consultations are by appointment only.</p>
           <div><i class="fas fa-phone-square-alt fa-lg"></i> Phone:<a href="tel:+19043743093"> 904-374-3093</a></div>
           <div> <a href="#"><i class="fab fa-twitter-square fa-lg"></i> Connect on Twitter</a></div>
