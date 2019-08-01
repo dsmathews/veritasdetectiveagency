@@ -27,21 +27,33 @@ $('document').ready(function () {
 
       console.log(dataCollection);
       console.table(dataCollection);
-      $("contactForm").trigger("reset")
+      $("#contactForm").trigger("reset")
       
    }
    function resetButton() {
       console.log("before")
-      $("contactForm").trigger("reset")
+      $("#contactForm").trigger("reset")
       console.log("after")
    }
-   function rccb(response) {
-      $("#submit").prop('disabled', false);
-   }
+   
 
    $("#submit").on("click", getInfo)
-   $("#reset").on("click", resetButton)
+   $("#clearForm").on("click", resetButton)
 })
+
+function rccb(response) {
+   console.log(response)
+   $.ajax({
+      type: "POST",
+      url: "https://www.google.com/recaptcha/api/siteverify",
+      data: data,
+      success: true || false,
+      dataType: dataType,
+    });
+    if (success === true) {
+   $("#submit").prop('disabled', false);
+    }
+}
 
 
 
