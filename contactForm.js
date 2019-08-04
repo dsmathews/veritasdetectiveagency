@@ -3,6 +3,7 @@ $('document').ready(function () {
    
 
    function getInfo() {
+      event.preventDefault();
       let firstName = $("#clientFirstName").val();
       let lastName = $("#clientLastName").val();
       let email = $("#clientEmail").val();
@@ -24,7 +25,14 @@ $('document').ready(function () {
          "Specific Situation": situation,
          "Description": description
       }
-
+      $.ajax({
+         type: "PUT",
+         URL: 'https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact',
+      })
+      $.post('https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact', dataCollection)
+         .then(
+            console.log(JSON)
+         )
       console.log(dataCollection);
       console.table(dataCollection);
       $("#contactForm").trigger("reset")
@@ -41,18 +49,22 @@ $('document').ready(function () {
    $("#clearForm").on("click", resetButton)
 })
 
-function rccb(response) {
-   console.log(response)
-   $.ajax({
-      type: "POST",
-      url: "https://www.google.com/recaptcha/api/siteverify",
-      data: data,
-      success: true || false,
-      dataType: dataType,
-    });
-    if (success === true) {
+function rccb(gResponse) {
+   console.log(gResponse)
    $("#submit").prop('disabled', false);
-    }
+   // const key = ""
+   // $.ajax({
+   //    type: "POST",
+   //    url: "https://www.google.com/recaptcha/api/siteverify",
+   //    secret: key,
+   //    response: gResponse,
+   //    success: function (data) {
+   //       if (data.success === true) {
+           
+   //           }
+   //    }
+   //  });
+    
 }
 
 
