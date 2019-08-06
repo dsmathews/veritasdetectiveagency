@@ -27,11 +27,11 @@ $('document').ready(function () {
       }
 
       const errRecord = function(res) {
-         console.log('something went wrong',res);
+         console.log('something went wrong',res, typeof dataPost, typeof dataCollection);
       }
 
       const okRecord = function(res) {
-         console.log('ok', res)
+         console.log('ok', res, typeof dataPost, typeof dataCollection)
       }
 
       let dataPost = JSON.stringify(dataCollection)
@@ -39,7 +39,7 @@ $('document').ready(function () {
       $.ajax({
          method: "PUT",
          url: "https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact/",
-         data: JSON.parse(dataPost),
+         data: dataPost,
          datatype: JSON,
          error: errRecord,
          success: okRecord
