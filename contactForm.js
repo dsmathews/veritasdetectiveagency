@@ -26,8 +26,10 @@ $('document').ready(function () {
          "Description": description
       }
 
-      const errRecord = function(res) {
-         console.log('something went wrong',res, typeof dataPost, typeof dataCollection);
+      const errRecord = function(req,res) {
+         console.log('something went wrong');
+         console.log(req);
+         console.log(res)
       }
 
       const okRecord = function(res) {
