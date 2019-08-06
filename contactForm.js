@@ -15,8 +15,8 @@ $('document').ready(function () {
       let description = $("#clientNeeds").val();
 
       let dataCollection = {
-         "First Name": firstName,
          "Last Name": lastName,
+         "First Name": firstName,
          "Email": email,
          "Phone Number": phone,
          "State": location,
@@ -34,8 +34,8 @@ $('document').ready(function () {
          console.log('ok', res)
       }
 
-      let dataPost = JSON.stringify(dataCollection)
-
+      let dataPost = JSON.parse(dataCollection)
+      
       $.ajax({
          method: "PUT",
          url: "https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact/",
