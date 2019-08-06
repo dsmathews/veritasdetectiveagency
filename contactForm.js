@@ -26,24 +26,25 @@ $('document').ready(function () {
          "Description": description
       }
 
-      // const errRecord = function(req, status, err) {
-      //    console.log('something went wrong', req, status, err);
+      const errRecord = function(res) {
+         console.log('something went wrong',res);
+      }
 
-      // }
+      const okRecord = function(res) {
+         console.log('ok', res)
+      }
 
-      // const okRecord = function(res) {
+      let dataPost = JSON.stringify(dataCollection)
 
-      // }
-
-      // $.ajax({
-      //    type: "PUT",
-      //    URL: 'https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact',
-      //    data: dataCollection,
-      //    datatype: JSON,
-      //    error: errRecord,
-      //    success: 
-      // })
-      $.post('https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact', dataCollection, function (res) {console.log(res)});
+      $.ajax({
+         type: "put",
+         URL: "https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact",
+         data: dataPost,
+         datatype: JSON,
+         error: errRecord,
+         success: okRecord
+      })
+      // $.post('https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact', dataPost, function (res) {console.log(res)});
       console.log(dataCollection);
       console.table(dataCollection);
       $("#contactForm").trigger("reset")
@@ -63,19 +64,6 @@ $('document').ready(function () {
 function rccb(gResponse) {
    console.log(gResponse)
    $("#submit").prop('disabled', false);
-   // const key = ""
-   // $.ajax({
-   //    type: "POST",
-   //    url: "https://www.google.com/recaptcha/api/siteverify",
-   //    secret: key,
-   //    response: gResponse,
-   //    success: function (data) {
-   //       if (data.success === true) {
-           
-   //           }
-   //    }
-   //  });
-    
 }
 
 
