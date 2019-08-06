@@ -37,8 +37,8 @@ $('document').ready(function () {
       let dataPost = JSON.stringify(dataCollection)
 
       $.ajax({
-         type: "PUT",
-         URL: "https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact",
+         method: "PUT",
+         url: "https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact/",
          data: dataPost,
          datatype: JSON,
          error: errRecord,
