@@ -34,7 +34,7 @@
 
   footer {
     justify-content: center;
-    background-image: linear-gradient(to right, lightgrey, black );
+    background-color: white;
     margin-top: 175px;
 
     position: sticky;
@@ -101,7 +101,7 @@
   }
 
   .navbar {
-    background-image: linear-gradient(to right, lightgrey, black );
+    background-color: white;
 
   }
 
@@ -131,7 +131,7 @@
 
   @media (max-width: 740px) {
     footer, #footerAssociations {
-      color: #0000aa;
+      color:black;
     }
   }
 

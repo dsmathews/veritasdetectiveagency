@@ -34,12 +34,12 @@ $('document').ready(function () {
          console.log('ok', res)
       }
 
-      let dataPost = JSON.parse(dataCollection)
+      let dataPost = JSON.stringify(dataCollection)
       
       $.ajax({
          method: "PUT",
          url: "https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact/",
-         data: dataPost,
+         data: JSON.parse(dataPost),
          datatype: JSON,
          error: errRecord,
          success: okRecord
@@ -65,7 +65,3 @@ function rccb(gResponse) {
    console.log(gResponse)
    $("#submit").prop('disabled', false);
 }
-
-
-
-
