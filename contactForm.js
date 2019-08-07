@@ -31,9 +31,9 @@ $('document').ready(function () {
             $('#modal').hide();
          });
          }
-         // console.log('something went wrong');
-         // console.log(req);
-         // console.log(res)
+         console.log('something went wrong');
+         console.log(req);
+         console.log(res)
       }
 
       const okRecord = function(res) {
@@ -44,7 +44,7 @@ $('document').ready(function () {
             $('#modal').hide();
          });
          
-         // console.log('ok', res, typeof dataPost, typeof dataCollection)
+         console.log('ok', res, typeof dataPost, typeof dataCollection)
       }
 
       let dataPost = JSON.stringify(dataCollection)
