@@ -15,15 +15,15 @@ $('document').ready(function () {
       let description = $("#clientNeeds").val();
 
       let dataCollection = {
-         "Last Name": lastName,
-         "First Name": firstName,
-         "Email": email,
-         "Phone Number": phone,
-         "State": location,
-         "Contact Method": contactMethod,
-         "Best Time to Contact": time,
-         "Specific Situation": situation,
-         "Description": description
+         "lastName": lastName,
+         "firstName": firstName,
+         "email": email,
+         "phone": phone,
+         "location": location,
+         "contactMethod": contactMethod,
+         "time": time,
+         "situation": situation,
+         "description": description
       }
 
       const errRecord = function(req,res) {
