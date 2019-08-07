@@ -1,7 +1,4 @@
 $('document').ready(function () {
-
-   
-
    function getInfo() {
       event.preventDefault();
       let firstName = $("#clientFirstName").val();
@@ -27,13 +24,27 @@ $('document').ready(function () {
       }
 
       const errRecord = function(req,res) {
-         console.log('something went wrong');
-         console.log(req);
-         console.log(res)
+         if(res.responseStatus !== 200) {
+         $('#modal').modal(show);
+         $('.success').hide();
+         $('.close').click(function(){
+            $('#modal').hide();
+         });
+         }
+         // console.log('something went wrong');
+         // console.log(req);
+         // console.log(res)
       }
 
       const okRecord = function(res) {
-         console.log('ok', res, typeof dataPost, typeof dataCollection)
+         if(res.responseStatus === 200)
+         $('#modal').modal(show);
+         $('.error').hide();
+         $('.close').click(function(){
+            $('#modal').hide();
+         });
+         
+         // console.log('ok', res, typeof dataPost, typeof dataCollection)
       }
 
       let dataPost = JSON.stringify(dataCollection)
@@ -46,9 +57,9 @@ $('document').ready(function () {
          error: errRecord,
          success: okRecord
       })
-      // $.post('https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact', dataPost, function (res) {console.log(res)});
-      console.log(dataCollection);
-      console.table(dataCollection);
+      // $.post("https://ifpk0bqxhk.execute-api.us-east-1.amazonaws.com/prod/email", dataPost, function (res) {console.log(res)});
+      // console.log(dataCollection);
+      // console.table(dataCollection);
       $("#contactForm").trigger("reset")
       
    }

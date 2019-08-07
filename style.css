@@ -90,13 +90,8 @@
     text-decoration: underline;
   }
 
-  #caseStudy1 {
-    border: 5px solid #D4AF37;
-
-  }
-
   body {
-    background-image: linear-gradient(to left, #0B138E, #4287f5 );
+    background-image: linear-gradient(to left, #4287f5, #0B138E);
     
   }
 
@@ -159,5 +154,9 @@
   #instagram{
     background-color: blue;
     color: white
+  }
+
+  .modal-header, .modal-footer{
+    background-image: linear-gradient(to left, #4287f5, #0B138E);
   }
   
