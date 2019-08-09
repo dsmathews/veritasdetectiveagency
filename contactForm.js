@@ -23,32 +23,48 @@ $('document').ready(function () {
          "description": description
       }
 
-      const errRecord = function(req,res) {
-         if(res.responseStatus !== 200) {
-         $('#modal').modal(show);
-         $('.success').hide();
-         $('.close').click(function(){
-            $('#modal').hide();
+      const errRecord = function (req, res) {
+         if (req.status !== 200 || res == 'error') {
+         $('#modal').toggle('display')
+         $('.success').toggle('hide')
+         $('#close').click(function(){
+            $('#modal').toggle('display');
+            $('window').reload();
          });
-         }
+         $('#closer').click(function(){
+            $('#modal').toggle('display');
+            $('window').reload();
+         });
          console.log('something went wrong');
          console.log(req);
          console.log(res)
       }
+      }
 
-      const okRecord = function(res) {
-         if(res.responseStatus === 200)
-         $('#modal').modal(show);
-         $('.error').hide();
-         $('.close').click(function(){
-            $('#modal').hide();
+      const okRecord = function (req,res) {
+         console.log(req);
+         console.log(res);
+         if (req.errorType !== "ValidationException"  && res == 'success') {
+         $('#modal').toggle('display')
+         $('.error').toggle('show')
+         $('#close').click(function(){
+            $('#modal').toggle('display');
+            $('window').reload();
          });
-         
-         console.log('ok', res, typeof dataPost, typeof dataCollection)
+         $('#closer').click(function(){
+            $('#modal').toggle('display');
+            $('window').reload();
+         });
+      } else {
+         errRecord();
+      }
+
+         console.log(req);
+         console.log('ok', res);
       }
 
       let dataPost = JSON.stringify(dataCollection)
-      
+
       $.ajax({
          method: "PUT",
          url: "https://523u7qu7ui.execute-api.us-east-1.amazonaws.com/prod/contact/",
@@ -61,14 +77,14 @@ $('document').ready(function () {
       // console.log(dataCollection);
       // console.table(dataCollection);
       $("#contactForm").trigger("reset")
-      
+
    }
    function resetButton() {
       console.log("before")
       $("#contactForm").trigger("reset")
       console.log("after")
    }
-   
+
 
    $("#submit").on("click", getInfo)
    $("#clearForm").on("click", resetButton)

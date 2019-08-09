@@ -61,16 +61,19 @@
     </div>
   </nav>
   <hr />
-  <div class="row ">
-    <div class="col-12 h-75">
-      <img class="w-100 h-75 my-0" id="aboutImage" src="images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="Contact Us">
+  <div class="row">
+    <div class="col-md-2 col-sm-2 col-xs-2"></div>
+    <div class="text-center col-md-8 col-sm-8 container">
+      <img class="img-fluid" id="contactImage" src="images/antique-classic-communication-207456.jpg" alt="Contact Us">
       <!-- Photo by NASA on Unsplash -->
     </div>
+    <div class="col-md-2 col-sm-2 col-xs-2"></div>
   </div>
   <br />
-  <div class="row">
-    <div class="col-md-8 col-sm-12">
-      <div id="formBox" class="container mb-5 overflow-auto">
+  <div class="row container">
+    <div class="col-md-1 col-sm-12"></div>
+    <div class="col-md-7 col-sm-12">
+      <div id="formBox" class="container overflow-auto">
         <form class="shadow shadow-lg" role="form" method="POST" id="contactForm">
           <h3 class="text-center">
             <br />
@@ -107,7 +110,7 @@
             <div class="col-md-1 col-sm-0"></div>
             <div class="col-md-10 col-sm-12 form-group">
               <div>
-                <label for="clientPhone">Phone Number:</label> <br /><input type="tel"
+                <label for="clientPhone">Phone Number: *</label> <br /><input type="tel"
                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="rounded form-control shadow shadow-sm" type="tel"
                   id="clientPhone" name="clientPhone" aria-label="Phone Number" required>
               </div>
@@ -117,7 +120,7 @@
           <div class="row">
             <div class="col-md-1 col-sm-0"></div>
             <div class="col-md-5 col-sm-12">
-              <label for="clientState">State: *</label><br />
+              <label for="clientState"> Where do you live?: *</label><br />
               <select class="custom-select" name="clientLocation" id="clientLocation" length="25" required>
                 <option value="" selected="selected">PLEASE SELECT</option>
                 <option value="Alabama">Alabama</option>
@@ -246,7 +249,7 @@
         </form>
       </div>
     </div>
-    <div class="col-md-3 col-sm-12">
+    <div class="col-md-4 col-sm-12">
       <div class="card">
         <div id="cardHeader" class="card-header text-center h4">Contact Us</div>
         <div class="card-body">
@@ -262,28 +265,27 @@
       </div>
 
     </div>
-    <div class="col-md-1 col-sm-12"></div>
   </div>
   <div id="modal" class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title"></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" id="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <div class="success text-success">
             <p>Thank you for contacting our agency.</p> 
-            <p>A member of our staff will in touch with you soon.</p>
+            <p>A member of our staff will contact you soon.</p>
           </div>
           <div class="error text-danger">
               <p>An error has occurred. Please try again.</p>
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary close" data-dismiss="modal">Close</button>
+          <button type="button" id="closer" class="btn btn-secondary close" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
