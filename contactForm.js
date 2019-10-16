@@ -73,9 +73,15 @@ $('document').ready(function () {
          error: errRecord,
          success: okRecord
       })
-      // $.post("https://ifpk0bqxhk.execute-api.us-east-1.amazonaws.com/prod/email", dataPost, function (res) {console.log(res)});
-      // console.log(dataCollection);
-      // console.table(dataCollection);
+      $.ajax({
+         method: "POST",
+         url: "https://zhjiou37ek.execute-api.us-east-1.amazonaws.com/Production",
+         data: dataPost,
+         datatype: JSON,
+         error: errRecord,
+         success: okRecord
+      })
+      
       $("#contactForm").trigger("reset")
 
    }
